@@ -62,7 +62,7 @@ Planned Subsystems are:
 | -------------------------------------------------------------------|:----------:| ------------------------- |
 | [eiCompany Blog](https://eicompany.wordpress.com/)                 | 20.10.2022 | eiCompany                 |
 | [RaPla](https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=eisenbiegler&file=TINF21B4) | 20.10.2022 | DHBW Karlsruhe RaPla                     |
-| [Material Design Guidelines] (https://m3.material.io/) | 20.10.2022 | Google |
+| [Material Design Guidelines](https://m3.material.io/) | 20.10.2022 | Google |
 
 
 ### 1.5 Overview
