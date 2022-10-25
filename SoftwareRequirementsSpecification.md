@@ -1,4 +1,4 @@
-# Common Playground - Software Requirements Specification 
+# eiBoard - Software Requirements Specification 
 
 ## Table of contents
 - [Table of contents](#table-of-contents)
@@ -74,7 +74,7 @@ The eiBoard Company is an interactive online planner dashboard. It is supposed t
 
 ### 2.2 Use Case Diagram
 
-![OUCD](./UseCaseDiagramCP.png)
+![OUCD](./UseCaseDiagram.png)
 
 Green is everything users can modify. Yellow is used for functionalities users can not alter.
 
