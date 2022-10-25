@@ -109,42 +109,40 @@ This section will explain the different use cases, you could see in the Use Case
 #### 3.1.1 Rapla calendar/Schedule
 To keep track of all lectures users want to see their schedules in the app.
 
-[Posting a session](./use_cases/UC1_Post_Session.md)
+[Rapla calendar/Schedule](UC1_SCHEDULE.md)
 
 #### 3.1.2 Task/To do List
 To keep track of all things to do users want to see their to dos as well as adding to dos.
 
-[Session overview](./use_cases/UC3_Session_Overview.md)
+[Tasks/To do List](UC2_TASKS.md)
 
-#### 3.1.3 Viewing classes and creating events
-still need to do
+#### 3.1.3 Creating events
+To keep their schedule accurate users want to create new events.
 
-[Create an account](./use_cases/UC4_Create_Account.md)
+[Creating events](UC3_EVENTS.md)
 
 #### 3.1.4 Creating an account
 To identify all users we need an account system. This account system enables us to build important functions such as a personalized overview over all tasks and appointments.
 
-[Login](./use_cases/UC5_Login.md)
+[Creating an account](UC4_CREATE_ACCOUNT.md)
 
 #### 3.1.5 Logging in
 The app will provide the possibility to register and log in. This will also make the usability easier as a user won’t have to add all his appointments again.
 
-[Logout](./use_cases/UC6_Logout.md)
+[Logging in](UC5_LOGIN.md)
 
 #### 3.1.6 Logging out
 In case you share your phone, have multiple accounts or just want to be cautious about your privacy you should be able to manually log out.
 
-[Join a session](./use_cases/UC2_Join_Session.md)
+[Logging out](UC6_LOGGING_OUT.md)
 
-#### 3.1.6 Logging out
-In case you share your phone, have multiple accounts or just want to be cautious about your privacy you should be able to manually log out.
+#### 3.1.7 View Classes
+To have a good overview users want to view their classes.
 
-[Join a session](./use_cases/UC2_Join_Session.md)
+[View classes](UC7_CLASSES.md)
 
-#### 3.1.7 Managing database
+#### 3.1.8 Managing database
 Hibernate is going to be the framework for our SQL database system.
-
-[Keeping track of your sessions](./use_cases/UC7_Keeping_Track.md)
 
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. We will also add an FAQ page, just in case the user would have any questions.
