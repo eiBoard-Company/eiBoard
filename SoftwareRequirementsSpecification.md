@@ -19,8 +19,8 @@
     - [Performance](#34-performance)
     - [Supportability](#35-supportability)
     - [Design Constraints](#36-design-constraints)
-    - [Online User Documentation and Help System Requirements](#37-on-line-user-documentation-and-help-system-requirements)
-    - [Purchased Components](#purchased-components)
+    - [Online User Documentation and Help System Requirements](#37-online-user-documentation-and-help-system-requirements)
+    - [Purchased Components](#38-purchased-components)
     - [Interfaces](#39-interfaces)
     - [Licensing Requirements](#310-licensing-requirements)
     - [Legal, Copyright And Other Notices](#311-legal-copyright-and-other-notices)
@@ -106,25 +106,25 @@ Design:
 
 ### 3.1 Functionality
 This section will explain the different use cases, you could see in the Use Case Diagram, and their functionality.
-- 3.1.1 Rapla calendar
-- 3.1.2 To do List
-- 3.1.3 Real life tasks
+- 3.1.1 Rapla calendar/Schedule
+- 3.1.2 Task/To do list
+- 3.1.3 Viewing Classes and creating Events
 - 3.1.4 Creating an account
 - 3.1.5 Logging in
 - 3.1.6 Logging out
 - 3.1.7 Managing database
 
-#### 3.1.1 Rapla calendar
+#### 3.1.1 Rapla calendar/Schedule
 To keep track of all lectures users want to see their schedules in the app.
 
 [Posting a session](./use_cases/UC1_Post_Session.md)
 
-#### 3.1.2 To do List
+#### 3.1.2 Task/To do List
 To keep track of all things to do users want to see their to dos as well as adding to dos.
 
 [Session overview](./use_cases/UC3_Session_Overview.md)
 
-#### 3.1.3 Real life tasks
+#### 3.1.3 Viewing classes and creating events
 still need to do
 
 [Create an account](./use_cases/UC4_Create_Account.md)
@@ -154,16 +154,6 @@ Hibernate is going to be the framework for our XXX database we are going to use 
 
 [Keeping track of your sessions](./use_cases/UC7_Keeping_Track.md)
 
-#### 3.1.8 Leaving a session
-The user gets also the possibility to delete a session he posted or to leave a session he joined.
-
-[Leaving a session](./use_cases/UC8_Leave_Session.md)
-
-#### add others
-Based on the overview over all sessions this features enables the user to find sessions by specific parameters. Therefore, the user can find a session by tags or other parameters like date. Later on, finding a session will be provided by geolocalization that the users can search for a session in a specific area.
-
-[Finding a session](./use_cases/UC9_Find_Session.md)
-
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. We will also add an FAQ page, just in case the user would have any questions.
 
@@ -181,7 +171,7 @@ Our server will be available all around the clock.
 #### 3.3.2 Defect Rate
 Our goal is to have no loss of any data. This is important so that users can rely on the app for all upcoming tasks and appointments.
 
-### 3.4 Perfomance
+### 3.4 Performance
 
 #### 3.4.1 Capacity
 The system should be able to manage thousands of requests. It should also be possible to register as many users as necessary.
@@ -195,7 +185,7 @@ To provide the best App perfomance we aim to keep the response time as low as po
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
-We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier. When merging onto the main branch we will have one ore more read over that code to assure the quality. 
+We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier. When merging onto the main branch we will have one ore more read over that code to assure the quality. Furthermore we'll try to organize our Code according to the View-Model-Controller Model.
 
 #### 3.5.2 Testing Strategy
 The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly and it will be easy to locate the error. 
@@ -218,22 +208,28 @@ We don't have any purchased components yet. If there will be purchased component
 
 ### 3.9 Interfaces
 
-#### 3.9.1 User Interfaces CONTINUE HERE
-The User interfaces that will be implented are:
-- Dashboard - lists all session and makes it possible to filter sessions
-- Session Page - shows detailed information about the session and makes it possible to connect session attendants for example via messaging system
-- Login - this page is used to log in 
-- Register - provides a registration form
-- Overwiew of personal sessions - shows all the sessions a user participates in
-- Friend List - friends can be added
-- Profile - makes it possible to post information about yourself, might provide messaging feature, also shows additional information about users (for example: Language, country, favorite games, etc.)
-- Settings - shows the settings
+#### 3.9.1 User Interfaces
+The User interfaces that will be implemented are:
+- Login Page - this page is used to log in
+- Sign up Page - provides a simple registration form
+- Dashboard/Start Page - lists todays schedule, current tasks, upcoming exams and overview of how many tasks are finished
+- Task page - overview of all tasks - they can also click on tasks to see more details
+- Schedule page - displays the schedule, either a daily or weekly view, users can choose
+- Classes page - users can find their classes here and click on them for more information
+- Exams page - displays all exams for the current semester
+- Useful link page - all kinds of useful links for the DHBW
+- Menu - users can navigate to all pages from there
+- Settings - shows the settings where users can navigate to: Profile , Design, Push messages, FAQ and About Us
+- Profile page - users can change their profile picture, name, E-Mail, password and the Rapla link from where their schedule will be imported
+- Design page - users can choose whether they want the app design to be in light or dark mode and choose the primary color for a tailored user experience
+- Push messages page - users can choose whether they want to receive push messages from eiBoard and if so what kind of messages
+- FAQ and About Us page - users can come here for help and to find out more about eiBoard
 
 #### 3.9.2 Hardware Interfaces
 (n/a)
 
 #### 3.9.3 Software Interfaces
-The app will be runnable on Android 4.4 and higher. iOS won't be featured at the moment.
+The app will be runnable on Android 4.1 and higher, and iOS 11 and higher.
 
 #### 3.9.4 Communication Interfaces
 The server and hardware will communicate using the http protocol. 
@@ -241,10 +237,10 @@ The server and hardware will communicate using the http protocol.
 ### 3.10 Licensing Requirements
 
 ### 3.11 Legal, Copyright, and Other Notices
-The logo is licensed to the Common Playground Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
+The logo is licensed to the eiCompany and is only allowed to use for the eiBoard application. We do not take responsibilty for any incorrect data or errors in the application.
 
 ### 3.12 Applicable Standards
-The development will follow the common clean code standards and naming conventions. Also we will create a definition of d which will be added here as soon as its complete.
+The development will follow the common clean code standards and naming conventions. Also we will create a Style Sheet of which will be added here as soon as its complete.
 
 ## 4. Supporting Information
 For any further information you can contact the eiBoard team or check out our [eiCompany Blog](https://eicompany.wordpress.com/). 
@@ -254,6 +250,3 @@ The Team Members are:
 - Marius Schad
 - Matteo Staar
 - Julian Stadler
-
-<!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"
