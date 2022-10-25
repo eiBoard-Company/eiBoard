@@ -3,7 +3,7 @@
 # 1. Create Account
 
 ## 1.1 Brief Description
-This use case allows anyone to register and create an account. Also the data will be secure saved in our data base.
+This use case allows anyone to register and create an account. The data will be secure saved in our data base.
 
 ## 1.2 Mockup
 ![Registration](../mockups/Registration.png)
@@ -11,46 +11,14 @@ This use case allows anyone to register and create an account. Also the data wil
 ![Registration Fail 2](../mockups/Registration_Fail2.png)
 ![Registration Fail 3](../mockups/Registration_Fail3.png)
 
-## 1.3 Screenshots
-<img src="./Screenshots/UC4_Create_Account_Screenshot0.png" alt="Register" width="300"/> <img src="./Screenshots/UC4_Create_Account_Screenshot1.png" alt="Register" width="300"/>
-
-There are several more error messages.
-
 # 2. Flow of Events
 
 ## 2.1 Basic Flow
-- user klicks on register
-- register screen opens
-- user fills in his data
-- user clicks on submit
-- data will be validated and send to the databse
-
-### Activity Diagram
-![Activity Diagram](../activity_diagrams/UCD4_Create_Account.png)
-
-### .feature File
-[.feature File Login](../../frontend/app/src/androidTest/assets/UC4_Create_Account.feature)
-```Cucumber
-Feature: Use Case 4 Create Account
-  As a USER
-  I want to create an account to sign in to the app
-  Scenario Outline: create new account
-    Given I have the app installed and open the register screen
-    When I fill in the <username> field
-    And I fill in the <password> field
-    And I fill in the <repeatPassword> field with the same value
-    And I click on the send Button
-    Then the app should validate the input
-    And send the data to the backend
-    And return to the login screen
-    Examples:
-      | username   | password  | repeatPassword |
-      |  iBims     |  1234Game |  1234Game      |
-      |  hello     |  fun      |  fun           |  
-```
-
-## 2.2 Alternative Flows
-n/a
+- user clicks on Sign Up
+- Sign Up page opens
+- user fills in their data
+- user clicks on Sign Up button
+- data will be validated and sent to the database
 
 # 3. Special Requirements
 User needs an email account to register
@@ -58,14 +26,10 @@ User needs an email account to register
 # 4. Preconditions
 The Preconditions for this use case are:
 1. The user has the app installed
-2. The user clicks on register
+2. The user clicks on Sign Up
 
 # 5. Postconditions
-The app opens the login screen
-
-### 5.1 Save changes / Sync with server
-Data gets encoded and saved in database
+The app opens the start screen
 
 # 6. Function Points
-![Function Points UC4_Create_Account](../function_points/UC4_Account.png)
-<img src="../function_points/Blue_print.png" alt="Function Points Blue_Print" width="500"/>
+Total number of story points: 8
