@@ -29,44 +29,39 @@
 
 ## 1. Introduction
 ### 1.1 Purpose
-This Software Requirements Specification (SRS) describes all specifications for the application "Common Playground". It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
+This Software Requirements Specification (SRS) describes all specifications for the application "eiBoard". It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
 
 
 ### 1.2 Scope
-The project is going to be realized as an Android App.  
-  
-Actors of this App can be users or moderators.  
-  
-Planned Subsystems are: 
-* Notice Board:  
-The notice board is the essential part of the user interface. Game sessions should be visualized as postings including relevant information about the session. Those should be partly standardized by a form with a free text option for specifics. The data must be stored accordingly.
-* Account System:  
-Users can create accounts so sessions can be connected to a person as well as to join requests. User data must be stored alongside the posting data.
-* Friend List and User Rating:  
-Once the account system is created there will be the option to mark users as favorites. Also users or game sessions should get a rating to counter abuse.
-* Connecting People:  
-The host of a game session has to be notified when someone wants to join their game. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This could be done via automated emails or a custom in-app system. For this an account system is needed.
-* Storing Data:  
-User data for accounts and possibly profiles has to be stored. Also the game sessions have to be stored as datasets containing the form contents and possibly contact data. The data storage will form the foundation for the visualization, account system and the search feature.
-* Finding your Game:  
-We need a tag system so everyone looking to join a game can search for the kind of games they are interested in. Possibly other aspects can be searchable, such as place or date. Tags must be stored and a search function developed. 
+The project is going to be realized with Flutter Framework as a mobile App.
+Actors of this App can be users or moderators.
+
+Planned Subsystems are:
+- Notice Board:
+	The notice board is the essential part of the user interface. Entries should be visualized as postings including relevant information. Those should be partly standardized by a form with a free text option for specifics. The data must be stored accordingly.
+- Account System:
+	Users can create an account for their personal calendar. It should be possible to get the timetable from rapla to make the app more user friendly. User data must be stored alongside the posting data.
+- Storing Data:
+	User data for accounts and possibly profiles has to be stored. The data storage will form the foundation for the visualization, account system and the search feature.
+
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 | Abbrevation | Explanation                            |
 | ----------- | -------------------------------------- |
+| API         | Application Programming Interface      |
+| FAQ         | Frequently asked Questions             |
+| n/a         | not applicable                         |
 | SRS         | Software Requirements Specification    |
 | UC          | Use Case                               |
-| n/a         | not applicable                         |
-| tbd         | to be determined                       |
-| UCD         | overall Use Case Diagram               |
-| FAQ         | Frequently asked Questions             |
+| UCD         | Overall Use Case Diagram               |
+| RaPla       | Raum Planer                            |
 
 ### 1.4 References
 
 | Title                                                              | Date       | Publishing organization   |
 | -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Common Playground Blog](http://commonplayground.wordpress.com)    | 18.10.2018 | Common Playground Team    |
-| [GitHub](https://github.com/nilskre/CommonPlayground)              | 18.10.2018 | Common Playground Team    |
+| [eiCompany Blog](https://eicompany.wordpress.com/)                 | 20.10.2022 | eiCompany                 |
+| [RaPla](https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=eisenbiegler&file=TINF21B4) | 20.10.2022 | DHBW Karlsruhe RaPla                     |
 
 
 ### 1.5 Overview
@@ -75,14 +70,13 @@ The following chapter provides an overview of this project with vision and Overa
 ## 2. Overall Description
 
 ### 2.1 Vision
-Inspired by carpool coordination services like ‘BlaBlaCar’ or ‘Mitfahrzentrale’ we want to build an application to coordinate game sessions. We plan to create a platform for people who are looking for other people to play games with. Covering online multiplayer games, tabletop, pen and paper or regular board games we want to provide a kind of bulletin board where people can state what they want to play, when and where they want to do it and how many people they are looking for. Others can then react to the postings and virtually join the play session to be connected by us so everyone can coordinate the actual play session together on a Common Playground.
+The eiBoard Company is an interactive online planner dashboard. It is supposed to implement the lecture schedule from Rapla. Users will be able to keep track of their appointments, assignments, homework, final exam dates and more. Users will be notified when an appointment is coming up. Users will also be able to see today’s meals in the mensa cafeteria.
 
 ### 2.2 Use Case Diagram
 
 ![OUCD](./UseCaseDiagramCP.png)
 
-- Green: Planned till end of december
-- Yellow: Planned till end of june
+Green is everything users can modify. Yellow is used for functionalities users can not alter.
 
 ### 2.3 Technology Stack
 The technology we use is:
