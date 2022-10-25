@@ -80,27 +80,19 @@ The eiBoard Company is an interactive online planner dashboard. It is supposed t
 Green is everything users can modify. Yellow is used for functionalities users can not alter.
 
 ### 2.3 Technology Stack
-The technology we use is:
+We are using following technology:
 
-Backend:
--Java and Spring
+Backend: Java and Spring
 
-Frontend:
--Flutter
+Frontend: Flutter
 
-IDE:
--VS Code, and Eclipse
+IDE: VS Code, IntelliJ IDEA and Eclipse
 
-Project Management:
--YouTrack
--GitHub
+Project Management: YouTrack and GitHub
 
-Testing:
--JUnit
--Selenium
+Testing: JUnit and Selenium
 
-Design:
--Adobe InDesign and Illustrator
+Design: Adobe InDesign and Illustrator
 
 ## 3. Specific Requirements
 
