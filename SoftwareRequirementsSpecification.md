@@ -150,7 +150,7 @@ In case you share your phone, have multiple accounts or just want to be cautious
 [Join a session](./use_cases/UC2_Join_Session.md)
 
 #### 3.1.7 Managing database
-Hibernate is going to be the framework for our XXX database we are going to use for our database system.
+Hibernate is going to be the framework for our SQL database system.
 
 [Keeping track of your sessions](./use_cases/UC7_Keeping_Track.md)
 
