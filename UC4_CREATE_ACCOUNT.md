@@ -29,7 +29,7 @@ The Preconditions for this use case are:
 2. The user clicks on Sign Up
 
 # 5. Postconditions
-The app opens the start screen
+The app opens the profile page so user can complete his profile
 
 # 6. Function Points
 Total number of story points: 8
