@@ -171,7 +171,7 @@ We plan on designing the user interface as intuitive and self-explanatory as pos
 Our goal is that a user installs the application, opens it and is able to use all features without any explanation or help.
 
 #### 3.2.2 Familiar Feeling
-We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the app without having to get to know new interfaces. Here we will be taking a look at the [Material Design Guidelines] (https://m3.material.io/).
+We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the app without having to get to know new interfaces. Here we will be taking a look at the [Material Design Guidelines](https://m3.material.io/).
 
 ### 3.3 Reliability
 
