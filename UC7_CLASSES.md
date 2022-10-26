@@ -6,10 +6,7 @@
 This use case allows users to see the classes from their schedule.
 
 ## 1.2 Mockup
-![Registration](../mockups/Registration.png)
-![Registration Fail 1](../mockups/Registration_Fail1.png)
-![Registration Fail 2](../mockups/Registration_Fail2.png)
-![Registration Fail 3](../mockups/Registration_Fail3.png)
+<img src="eiBoard-07.png" alt="Menu" style="width:200px;"/> &nbsp; <img src="eiBoard-12.png" alt="Classes Page" style="width:200px;"/> &nbsp; <img src="eiBoard-05.png" alt="More details" style="width:200px;"/>
 
 # 2. Flow of Events
 
