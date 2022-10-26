@@ -6,7 +6,7 @@
 This use case allows a logged in user to log out.
 
 ## 1.2 Mockup
-![Mockup](../mockups/Logout.png)
+<img src="eiBoard-07.png" alt="Menu - Logout" style="width:200px;"/>
 
 # 2. Flow of Events
 
