@@ -3,7 +3,7 @@
 # 1. Login
 
 ## 1.1 Brief Description
-This use case allows a user with an account to log in which is the basis for posting and joining sessions as well as tracking one's sessions.
+This use case allows a user with an account to log in which is the basis for posting and joining sessions as well as tracking one's sessions. 
 
 ## 1.2 Mockup
 <img src="eiBoard-01.png" alt="Open page" style="width:200px;"/><img src="eiBoard-02.png" alt="Login Page" style="width:200px;"/>
@@ -31,4 +31,4 @@ The Preconditions for this use case are:
 Start Page opens
 
 # 6. Function Points
-Total number of story points: 5
+Total number of story points: 13
