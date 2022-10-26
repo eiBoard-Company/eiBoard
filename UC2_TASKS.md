@@ -6,10 +6,11 @@
 This use case allows users to create and see created tasks.
 
 ## 1.2 Mockup
-![Registration](../mockups/Registration.png)
-![Registration Fail 1](../mockups/Registration_Fail1.png)
-![Registration Fail 2](../mockups/Registration_Fail2.png)
-![Registration Fail 3](../mockups/Registration_Fail3.png)
+<img src="eiBoard-07.png" alt="Menu" style="width:200px;"/> &nbsp; <img src="eiBoard-13.png" alt="Task Page" style="width:200px;"/> &nbsp; <img src="eiBoard-14.png" alt="More detail on task" style="width:200px;"/> &nbsp; <img src="eiBoard-06.png" alt="Create new task" style="width:200px;"/>
+
+- Errors
+
+<img src="eiBoard-25.png" alt="Create Task Fail 1" style="width:200px;"/>
 
 # 2. Flow of Events
 
@@ -18,6 +19,7 @@ This use case allows users to create and see created tasks.
 - data will be sent from database
 - Task page opens
 - if user already created tasks, tasks will be displayed
+- user can click on a task for more detail
 - with a click on the '+' users can create new tasks
 
 # 3. Special Requirements
