@@ -6,10 +6,7 @@
 This use case allows a user to see their schedule with the data from their registered Rapla URL and already created events. The app will get the data from the database and Rapla.
 
 ## 1.2 Mockup
-![Registration](../mockups/Registration.png)
-![Registration Fail 1](../mockups/Registration_Fail1.png)
-![Registration Fail 2](../mockups/Registration_Fail2.png)
-![Registration Fail 3](../mockups/Registration_Fail3.png)
+<img src="eiBoard-07.png" alt="Menu" style="width:200px;"/> &nbsp; <img src="eiBoard-10.png" alt="Schedule Page" style="width:200px;"/> &nbsp; <img src="eiBoard-27.png" alt="Daily View" style="width:200px;"/> &nbsp; <img src="eiBoard-28.png" alt="Weekly View" style="width:200px;"/>
 
 # 2. Flow of Events
 
