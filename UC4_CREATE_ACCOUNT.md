@@ -6,6 +6,7 @@
 This use case allows anyone to register and create an account. The data will be secure saved in our data base.
 
 ## 1.2 Mockup
+<img src="eiBoard-01.png" alt="Open page" style="width:200px;"/>
 ![Open page](eiBoard-01.png)
 ![Sign Up Page](eiBoard-03.png)
 ![completing profile](eiBoard-18.png)
