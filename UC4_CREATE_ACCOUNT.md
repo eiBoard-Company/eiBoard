@@ -6,10 +6,13 @@
 This use case allows anyone to register and create an account. The data will be secure saved in our data base.
 
 ## 1.2 Mockup
-![Registration](../mockups/Registration.png)
-![Registration Fail 1](../mockups/Registration_Fail1.png)
-![Registration Fail 2](../mockups/Registration_Fail2.png)
-![Registration Fail 3](../mockups/Registration_Fail3.png)
+![Open page](eiBoard-01.png)
+![Sign Up Page](eiBoard-03.png)
+![completing profile](eiBoard-18.png)
+- Errors
+![Registration Fail 1](eiBoard-20.png)
+![Registration Fail 2](eiBoard-21.png)
+![Registration Fail 3](eiBoard-26.png)
 
 # 2. Flow of Events
 
