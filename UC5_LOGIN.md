@@ -6,9 +6,11 @@
 This use case allows a user with an account to log in which is the basis for posting and joining sessions as well as tracking one's sessions.
 
 ## 1.2 Mockup
-![Mockup login](../mockups/Login.png)
-![Mockup login fail1](../mockups/Login_Fail1.png)
-![Mockup login fail2](../mockups/Login_Fail2.png)
+<img src="eiBoard-01.png" alt="Open page" style="width:200px;"/><img src="eiBoard-02.png" alt="Login Page" style="width:200px;"/>
+
+- Errors
+
+<img src="eiBoard-22.png" alt="Login Fail 1" style="width:200px;"/><img src="eiBoard-23.png" alt="Login Fail 2" style="width:200px;"/>
 
 # 2. Flow of Events
 
