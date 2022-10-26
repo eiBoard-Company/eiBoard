@@ -37,8 +37,8 @@ The project is going to be realized with Flutter Framework as a mobile App.
 Actors of this App can be users or moderators.
 
 Planned Subsystems are:
-- Notice Board:
-	The notice board is the essential part of the user interface. Entries should be visualized as postings including relevant information. Those should be partly standardized by a form with a free text option for specifics. The data must be stored accordingly.
+- Start Dashboard:
+	The dashboard is the essential part of the user interface. When a user opens the app he will be up to date with all that's going on in their schedule, tasks, and exams. The data must be stored accordingly.
 - Account System:
 	Users can create an account for their personal calendar. It should be possible to get the timetable from rapla to make the app more user friendly. User data must be stored alongside the posting data.
 - Storing Data:
@@ -71,7 +71,7 @@ The following chapter provides an overview of this project with vision and Overa
 ## 2. Overall Description
 
 ### 2.1 Vision
-The eiBoard Company is an interactive online planner dashboard. It is supposed to implement the lecture schedule from Rapla. Users will be able to keep track of their appointments, assignments, homework, final exam dates and more. Users will be notified when an appointment is coming up. Users will also be able to see today’s meals in the mensa cafeteria.
+The eiBoard Company is an interactive online planner dashboard. It is supposed to implement the lecture schedule from Rapla. Users will be able to keep track of their appointments, assignments, homework, final exam dates and more. Users will be notified when an appointment is coming up.
 
 ### 2.2 Use Case Diagram
 
