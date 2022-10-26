@@ -104,7 +104,9 @@ This section will explain the different use cases, you could see in the Use Case
 - 3.1.4 Creating an account
 - 3.1.5 Logging in
 - 3.1.6 Logging out
-- 3.1.7 Managing database
+- 3.1.7 View Classes
+- 3.1.8 Settings
+- 3.1.9 Managing database
 
 #### 3.1.1 Rapla calendar/Schedule
 To keep track of all lectures users want to see their schedules in the app.
@@ -141,7 +143,12 @@ To have a good overview users want to view their classes.
 
 [View classes](UC7_CLASSES.md)
 
-#### 3.1.8 Managing database
+#### 3.1.8 Settings
+To have a good user experience the user needs settings.
+
+[View settings](UC8_SETTINGS.md)
+
+#### 3.1.9 Managing database
 Hibernate is going to be the framework for our SQL database system.
 
 ### 3.2 Usability
