@@ -6,10 +6,11 @@
 This use case allows users to create events that they will be able to see in their schedule.
 
 ## 1.2 Mockup
-![Registration](../mockups/Registration.png)
-![Registration Fail 1](../mockups/Registration_Fail1.png)
-![Registration Fail 2](../mockups/Registration_Fail2.png)
-![Registration Fail 3](../mockups/Registration_Fail3.png)
+<img src="eiBoard-07.png" alt="Menu" style="width:200px;"/> \t <img src="eiBoard-10.png" alt="Schedule Page" style="width:200px;"/> \t <img src="eiBoard-11.png" alt="Create new Event" style="width:200px;"/>
+
+- Errors
+
+<img src="eiBoard-24.png" alt="Create Event Fail 1" style="width:200px;"/>
 
 # 2. Flow of Events
 
