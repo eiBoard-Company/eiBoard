@@ -15,6 +15,9 @@ This use case allows a logged in user to log out.
 - User opens menu and clicks "Logout"
 - App returns to login screen
 
+## Activity Diagram
+<img src="ActivityDiagram_LOGOUT.png" alt="Activity Diagram Logout" style="width:800px;"/>
+
 # 3. Special Requirements
 - The user already has set up an account
 
