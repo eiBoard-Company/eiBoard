@@ -21,6 +21,9 @@ This use case allows users to create events that they will be able to see in the
 - if user already created events or linked a Rapla URL, schedule will be displayed
 - with a click on the '+' users can create new events
 
+## Activity Diagram
+<img src="ActivityDiagram_CREATE_EVENT.png" alt="Activity Diagram Create Event" style="width:800px;"/>
+
 # 3. Special Requirements
 
 # 4. Preconditions
