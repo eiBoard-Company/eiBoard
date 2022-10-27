@@ -29,4 +29,4 @@ The Precondition for this use case is:
 User credentials are removed
 
 # 6. Story Points
-Total number of story points: 1
+Total number of story points: 3
