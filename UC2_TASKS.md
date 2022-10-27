@@ -22,6 +22,9 @@ This use case allows users to create and see created tasks.
 - user can click on a task for more detail
 - with a click on the '+' users can create new tasks
 
+## Activity Diagram
+<img src="ActivityDiagram_CREATE_TASK.png" alt="Activity Diagram Create Task" style="width:800px;"/>
+
 # 3. Special Requirements
 
 # 4. Preconditions
