@@ -75,7 +75,7 @@ The eiBoard Company is an interactive online planner dashboard. It is supposed t
 
 ### 2.2 Use Case Diagram
 
-![OUCD](UseCaseDiagram_Updated.png)
+![OUCD](UseCaseDiagram_updated.png)
 
 
 ### 2.3 Technology Stack
