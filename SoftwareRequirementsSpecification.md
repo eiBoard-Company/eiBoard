@@ -75,9 +75,8 @@ The eiBoard Company is an interactive online planner dashboard. It is supposed t
 
 ### 2.2 Use Case Diagram
 
-![OUCD](UseCaseDiagram_updated.png)
+![OUCD](UseCaseDiagram_Updated.png)
 
-Green is everything users can modify. Orange is used for functionalities users can not alter.
 
 ### 2.3 Technology Stack
 We are using following technology:
