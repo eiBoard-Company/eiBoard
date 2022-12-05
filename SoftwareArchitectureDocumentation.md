@@ -20,7 +20,7 @@
 - [Implementation View](#8-implementation-view)
     - [Overview](#81-overview)
     - [Implementation View](#82-layers)
-- [Data View] (#9-data-view)
+- [Data View (Optional)] (#9-data-view-(optional))
 - [Size and Performance](#10-size-and-performance)
 - [Quality](#11-quality)
 
@@ -60,9 +60,9 @@ This Software Architecture Document (SAD) provides an overview of the entire Sof
 
 ## 3. Architectural Goals and Constraints
 The application “eiBoard” is a mobile app designed to create and manage todos. The frontend is going to be realized with Flutter. The backend will be implemented with the Spring Boot Framework and Java. Most important are the three subsystems in the application:
-• Start dashboard: The essential part of the UI, which shows the DHBW rapla schedule, tasks, and exams.
-• Account system: Users of eiBoard can create their own accounts to get their personal space. The account will also be connected with the rapla calendar to show each user’s schedule.
-• Database system: All the data which is shown by the start dashboard of each user should be stored in a database. For the database we decided to use H2 database which is an in-memory database but can also used on a persistent level.
+- Start dashboard: The essential part of the UI, which shows the DHBW rapla schedule, tasks, and exams.
+- Account system: Users of eiBoard can create their own accounts to get their personal space. The account will also be connected with the rapla calendar to show each user’s schedule.
+- Database system: All the data which is shown by the start dashboard of each user should be stored in a database. For the database we decided to use H2 database which is an in-memory database but can also used on a persistent level.
 For the design of eiBoard there is a style guide, which includes all fonts and style.
 The whole application progress is stored on GitHub and documented by a WordPress blog.
 
@@ -85,11 +85,11 @@ For each significant class in the package, include its name, brief description, 
 ## 6. Process View
 Questions to answer when drawing component diagram
 
-• What are the major executing components and how do they interact at runtime?
-• What are the major shared data stores?
-• Which parts of the system are replicated?
-• How does data progress through the system?
-• Which parts of the system can run in parallel?
+- What are the major executing components and how do they interact at runtime?
+- What are the major shared data stores?
+- Which parts of the system are replicated?
+- How does data progress through the system?
+- Which parts of the system can run in parallel?
 
 ## 7. Deployment View
 [This section describes one or more physical network (hardware) configurations on which the software is deployed and run. It is a view of the Deployment Model. At a minimum for each configuration it should indicate the physical nodes (computers, CPUs) that execute the software and their interconnections (bus, LAN, point-to-point, and so on.) Also include a mapping of the processes of the Process View onto the physical nodes.]
@@ -103,10 +103,10 @@ Questions to answer when drawing component diagram
 ### 8.2 Layers
 [For each layer, include a subsection with its name, an enumeration of the subsystems located in the layer, and a component diagram.]
 Subsystem:
-• Dashboard: Calendar, Tasklist, Navigation, Impressumbar
-• Account: Login, Sign Up
-• Rapla: Lecture, ScheduleDay, RaplaApi
-• Database: Entry, Person, Type
+- Dashboard: Calendar, Tasklist, Navigation, Impressumbar
+- Account: Login, Sign Up
+- Rapla: Lecture, ScheduleDay, RaplaApi
+- Database: Entry, Person, Type
 
 ## 9. Data View (optional)
 [A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]
