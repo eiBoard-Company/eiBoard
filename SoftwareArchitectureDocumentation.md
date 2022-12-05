@@ -101,12 +101,13 @@ Questions to answer when drawing component diagram
 [This subsection names and defines the various layers and their contents, the rules that govern the inclusion to a given layer, and the boundaries between layers. Include a component diagram that shows the relations between layers. ]
 
 ### 8.2 Layers
-[For each layer, include a subsection with its name, an enumeration of the subsystems located in the layer, and a component diagram.]
 Subsystem:
 - Dashboard: Calendar, Tasklist, Navigation, Impressumbar
 - Account: Login, Sign Up
 - Rapla: Lecture, ScheduleDay, RaplaApi
 - Database: Entry, Person, Type
+
+Click [here] (https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_component_diagram.png) for the Component Diagram
 
 ## 9. Data View
 [A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]
