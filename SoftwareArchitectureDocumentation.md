@@ -20,7 +20,7 @@
 - [Implementation View](#8-implementation-view)
     - [Overview](#81-overview)
     - [Implementation View](#82-layers)
-- [Data View (Optional)] (#9-data-view-(optional))
+- [Data View] (#9-data-view)
 - [Size and Performance](#10-size-and-performance)
 - [Quality](#11-quality)
 
@@ -108,7 +108,7 @@ Subsystem:
 - Rapla: Lecture, ScheduleDay, RaplaApi
 - Database: Entry, Person, Type
 
-## 9. Data View (optional)
+## 9. Data View
 [A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]
 
 ## 10. Size and Performance
