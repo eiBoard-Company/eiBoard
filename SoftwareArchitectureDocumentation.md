@@ -59,7 +59,19 @@ This Software Architecture Document (SAD) provides an overview of the entire Sof
 [This section describes what software architecture is for the current system, and how it is represented. Of the Use-Case, Logical, Process, Deployment, and Implementation Views, it enumerates the views that are necessary, and for each view, explains what types of model elements it contains.]
 
 ## 3. Architectural Goals and Constraints
-The application “eiBoard” is a mobile app designed to create and manage todos. The frontend is going to be realized with Flutter. The backend will be implemented with the Spring Boot Framework and Java. Most important are the three subsystems in the application:
+**MVC**
+Frontend and backend are using the MVC pattern. This enables a clean software architecture with separate model view and controller.
+
+**Front end**
+The App Client is realized with Flutter. In the Frontend no MVC Tool is needed, because the MVC Pattern is integrated into Flutter development.
+View: activities in the app
+
+**Back end**
+The back end is written in Java. As MVC tool we are using Spring Boot. As a database we are using H2. The Server offers multiple REST APIs which are accessed by our front end.
+Model: domain specific classes
+Controller: RestController
+
+Most important are the three subsystems in the application:
 - Start dashboard: The essential part of the UI, which shows the DHBW rapla schedule, tasks, and exams.
 - Account system: Users of eiBoard can create their own accounts to get their personal space. The account will also be connected with the rapla calendar to show each user’s schedule.
 - Database system: All the data which is shown by the start dashboard of each user should be stored in a database. For the database we decided to use H2 database which is an in-memory database but can also used on a persistent level.
