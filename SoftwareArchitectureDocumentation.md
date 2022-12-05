@@ -117,7 +117,5 @@ Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_c
 
 ## 11. Quality
 
-[A description of how the software architecture contributes to all capabilities (other than functionality) of the system: extensibility, reliability, portability, and so on. If these characteristics have special significance, such as safety, security or privacy implications, they must be clearly delineated.]
-
-<img src="availabilityTactics_vol2.png" alt="Availability Tactics" style="width:400px;"/>
+<img src="availabilityTactics_vol2.png" alt="Availability Tactics" style="width:600px;"/>
 
