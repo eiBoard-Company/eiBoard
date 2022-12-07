@@ -130,6 +130,13 @@ Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_c
 [A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints.]
 
 ## 11. Quality
+Interoperability: Connect with rapla Api to show data as entry in the calendar. Create carbon copy in parallel thread. Frequently update the carbon copy (table in database for the rapla entries, if connection crushes don’t worry, database does not need to be restarted only update of rapla table), frequently ping to make sure that rapla is connectable. Write logs to make bugfixing easier.
+
+Availability: Set notification as default. Save timestamps for notification in cache to avoid a “sleepy entry”. Check the availability before making alarm. If Error occurs send alarm message to user and developer. (Alarm will be there in any case, entry wont be overslept). Write logs to make bugfixing easier.
+
 
 <img src="availabilityTactics_vol2.png" alt="Availability Tactics" style="width:600px;"/>
+
+<img src="Interoperability Tactics Diagram v_2.png" alt="Availability Tactics" style="width:600px;"/>
+Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Interoperability%20Checklist.docx) for the additional Interoperability Tactics Checklist.
 
