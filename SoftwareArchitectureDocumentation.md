@@ -150,7 +150,14 @@ Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_c
 [A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]
 
 ## 10. Size and Performance
-[A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints.]
+[A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints
+
+ Reliability: Make the software architecture reliable so that any mistakes won't completely shut it down
+ 
+ Security: The software architecture should protect the data of the users so that their personal data isnt visible to anyone that not supposed to see it
+ 
+ Accesability: Make the Software avaible on as much ways as possible so users have their data everywhere they need it at the same time, e.g. mobile phone, tablet, Laptop...
+ 
 
 ## 11. Quality
 Interoperability: Connect with rapla Api to show data as entry in the calendar. Create carbon copy in parallel thread. Frequently update the carbon copy (table in database for the rapla entries, if connection crushes don’t worry, database does not need to be restarted only update of rapla table), frequently ping to make sure that rapla is connectable. Write logs to make bugfixing easier.
