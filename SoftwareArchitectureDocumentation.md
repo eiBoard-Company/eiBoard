@@ -150,7 +150,6 @@ Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_c
 [A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]
 
 ## 10. Size and Performance
-[A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints
 
  Reliability: Make the software architecture reliable so that any mistakes won't completely shut it down
  
