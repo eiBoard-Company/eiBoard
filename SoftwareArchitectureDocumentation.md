@@ -56,7 +56,21 @@ This Software Architecture Document (SAD) provides an overview of the entire Sof
 [This subsection describes what the rest of the Software Architecture Document contains and explains how the Software Architecture Document is organized.]
     
 ## 2. Architectural Representation
-[This section describes what software architecture is for the current system, and how it is represented. Of the Use-Case, Logical, Process, Deployment, and Implementation Views, it enumerates the views that are necessary, and for each view, explains what types of model elements it contains.]
+Logical View:
+The Logical View is based on our End-user functionalities. Since eiBoard is a dashboard for planning daily tasks, but also university tasks, the objects "daily todo", "uni-todo" and "user" are created there. This displays university tasks directly to the user. In addition, he can add his own tasks and see his timetable.
+
+Process View:
+For the process view, there are different views in which to view eiBoard. First of all, we looked at the login. The LoginSequenceDiagram(URL: https://github.com/eiBoard-Company/eiBoard/blob/documentation/LoginSequenceDiagram.png) basically shows that the user sees the login page and enters his login data there. This data is sent to the backend, which then compares it with the help of a database and sends back a result.
+
+Development View:
+
+There are currently 4 subsystems for the development view. The subsystem "Account" is responsible for the modules "Login" and "Registration". If the login is successful, the subsystem "Dashboard" is used. This contains the modules "Calendar", "Tasklist", "Navigation" and "Impressumbar". If the "Calendar" module is accessed, the "Rapla" subsystem is called, which returns the requested timetable entries. On the other hand, when the "Tasklist" module is accessed, the "Database" subsystem is called, which returns the data within the "Person" module and its corresponding "Entry" and "Type" modules.
+(Component-Diagram: https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_component_diagram.png)
+
+Physical View:
+
+The eiBoard software can be used both in the browser and on mobile Android devices. This was realised through the Flutter development kit. The frontend communicates with the backend, which was realised with Spring Boot. This has the advantage that database entities can be created directly in the Java code and simple routing takes place. The entire backend runs on a Jakarta server and can also access the Rapla content via a Rest API.
+
 
 ## 3. Architectural Goals and Constraints
 **MVC**
@@ -106,7 +120,8 @@ Questions to answer when drawing component diagram
 <img src="component-sequence.png" alt="Component Sequence Diagram" style="width:600px;"/>
 
 ## 7. Deployment View
-[This section describes one or more physical network (hardware) configurations on which the software is deployed and run. It is a view of the Deployment Model. At a minimum for each configuration it should indicate the physical nodes (computers, CPUs) that execute the software and their interconnections (bus, LAN, point-to-point, and so on.) Also include a mapping of the processes of the Process View onto the physical nodes.]
+
+---
 
 ## 8. Implementation View
 [This section describes the overall structure of the implementation model, the decomposition of the software into layers and subsystems in the implementation model, and any architecturally significant components.]
