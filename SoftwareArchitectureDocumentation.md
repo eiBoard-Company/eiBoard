@@ -57,9 +57,11 @@ This Software Architecture Document (SAD) provides an overview of the entire Sof
     
 ## 2. Architectural Representation
 Logical View:
+
 The Logical View is based on our End-user functionalities. Since eiBoard is a dashboard for planning daily tasks, but also university tasks, the objects "daily todo", "uni-todo" and "user" are created there. This displays university tasks directly to the user. In addition, he can add his own tasks and see his timetable.
 
 Process View:
+
 For the process view, there are different views in which to view eiBoard. First of all, we looked at the login. The LoginSequenceDiagram(URL: https://github.com/eiBoard-Company/eiBoard/blob/documentation/LoginSequenceDiagram.png) basically shows that the user sees the login page and enters his login data there. This data is sent to the backend, which then compares it with the help of a database and sends back a result.
 
 Development View:
