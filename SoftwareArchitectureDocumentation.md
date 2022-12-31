@@ -127,7 +127,13 @@ Questions to answer when drawing component diagram
 <img src="Implementation_View.png" alt="Implementation View" style="width:600px;"/>
 
 ### 8.1 Overview
-[This subsection names and defines the various layers and their contents, the rules that govern the inclusion to a given layer, and the boundaries between layers. Include a component diagram that shows the relations between layers. ]
+eiBoard execution code: In this package is stored everything which can be executed as code. For example the whole Backend and Frontend for eiBoard. Furhtermore the database configuaration and the code for the Rapla API are stored in it.
+
+Rapla: defines the Rapla interface that gives common schedule informations back to the eiBoard system.
+
+h1 database controller: is a web-based interface that shows the database controller and all entites with their entries.
+
+Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Implementation_View.png) for the Diagram.
 
 ### 8.2 Layers
 Subsystem:
