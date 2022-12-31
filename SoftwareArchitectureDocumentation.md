@@ -121,10 +121,10 @@ Questions to answer when drawing component diagram
 
 ## 7. Deployment View
 
----
+<img src="Deployment_View.png" alt="Deployment Diagram" style="width:600px;"/>
 
 ## 8. Implementation View
-[This section describes the overall structure of the implementation model, the decomposition of the software into layers and subsystems in the implementation model, and any architecturally significant components.]
+<img src="Implementation_View.png" alt="Implementation View" style="width:600px;"/>
 
 ### 8.1 Overview
 [This subsection names and defines the various layers and their contents, the rules that govern the inclusion to a given layer, and the boundaries between layers. Include a component diagram that shows the relations between layers. ]
