@@ -71,12 +71,12 @@ The Logical View is based on our End-user functionalities. Since eiBoard is a da
 
 Process View:
 
-For the process view, there are different views in which to view eiBoard. First of all, we looked at the login. The LoginSequenceDiagram(URL: https://github.com/eiBoard-Company/eiBoard/blob/documentation/LoginSequenceDiagram.png) basically shows that the user sees the login page and enters his login data there. This data is sent to the backend, which then compares it with the help of a database and sends back a result.
+For the process view, there are different views in which to view eiBoard. First of all, we looked at the login. The [LoginSequenceDiagram](https://github.com/eiBoard-Company/eiBoard/blob/documentation/LoginSequenceDiagram.png) basically shows that the user sees the login page and enters his login data there. This data is sent to the backend, which then compares it with the help of a database and sends back a result.
 
 Development View:
 
 There are currently 4 subsystems for the development view. The subsystem "Account" is responsible for the modules "Login" and "Registration". If the login is successful, the subsystem "Dashboard" is used. This contains the modules "Calendar", "Tasklist", "Navigation" and "Impressumbar". If the "Calendar" module is accessed, the "Rapla" subsystem is called, which returns the requested timetable entries. On the other hand, when the "Tasklist" module is accessed, the "Database" subsystem is called, which returns the data within the "Person" module and its corresponding "Entry" and "Type" modules.
-(Component-Diagram: https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_component_diagram.png)
+[Component-Diagram](https://github.com/eiBoard-Company/eiBoard/blob/documentation/UML_component_diagram.png)
 
 Physical View:
 
