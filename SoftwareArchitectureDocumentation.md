@@ -114,7 +114,7 @@ The whole application progress is stored on GitHub and documented by a WordPress
 ### 5.1 Overview
 Our Flutter Frontend calls the different Controllers on an Action. In the image the different packages of the backend are displayed.
 
-<img src="klassendiagramm backend.png" alt="Class Diagram" style="width:600px;"/>
+<img src="klassendiagramm backend.png" alt="Class Diagram" style="width:1000px;"/>
 
 ### 5.2 Architecturally Significant Design Packages
 We use [Material Design](https://m3.material.io/) for our Frontend. Material is a design system created by Google to help build high-quality digital experiences for Android, iOS, Flutter, and the web.
