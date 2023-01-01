@@ -104,10 +104,15 @@ For the design of eiBoard there is a style guide, which includes all fonts and s
 The whole application progress is stored on GitHub and documented by a WordPress blog.
 
 ## 4. Use-Case View
-[This section lists use cases or scenarios from the use-case model if they represent some significant, central functionality of the final system, or if they have a large architectural coverage—they exercise many architectural elements or if they stress or illustrate a specific, delicate point of the architecture.]
+The following image shows all Use Cases.
+<img src="UseCaseDiagram_updated.png" alt="UseCaseDiagram" style="width:600px;"/>
+
 
 ### 4.1 Use-Case Realizations
-[This section illustrates how the software actually works by giving a few selected use-case (or scenario) realizations, and explains how the various design model elements contribute to their functionality.]
+For following Use Cases you can find Use-Case Realizations. 
+- [Creating an account](UC4_CREATE_ACCOUNT.md)
+- [Logging in](UC5_LOGIN.md)
+- [Logging out](UC6_LOGGING_OUT.md)
  
 ## 5. Logical View
 
