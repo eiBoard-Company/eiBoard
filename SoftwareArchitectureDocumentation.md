@@ -31,7 +31,16 @@
 This Software Architecture Document (SAD) provides an overview of the entire Software Architecture Document. It provides a comprehensive architectural overview of the system, using a number of different architectural views to depict different aspects of the system. It is intended to capture and convey the significant architectural decisions which have been made on the system.
 
 ### 1.2 Scope
-[A brief description of what the Software Architecture Document applies to; what is affected or influenced by this document.]
+The project is going to be realized with Flutter Framework as a mobile App.
+Actors of this App can be users or moderators.
+
+Planned Subsystems are:
+- Start Dashboard:
+	The dashboard is the essential part of the user interface. When a user opens the app he will be up to date with all that's going on in their schedule, tasks, and exams. The data must be stored accordingly.
+- Account System:
+	Users can create an account for their personal calendar. It should be possible to get the timetable from rapla to make the app more user friendly. User data must be stored alongside the posting data.
+- Storing Data:
+	User data for accounts and possibly profiles has to be stored. The data storage will form the foundation for the visualization, account system and the search feature.
 
 
 ### 1.3 Definitions, Acronyms and Abbreviations
@@ -53,7 +62,7 @@ This Software Architecture Document (SAD) provides an overview of the entire Sof
 
 
 ### 1.5 Overview
-[This subsection describes what the rest of the Software Architecture Document contains and explains how the Software Architecture Document is organized.]
+The following chapter provides an representation of the the architecture. The third chapter delivers more specific details of our goals and the related constraints that are coming with this.
     
 ## 2. Architectural Representation
 Logical View:
