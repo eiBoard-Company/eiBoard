@@ -20,6 +20,9 @@ This use case allows a user with an account to log in which is the basis for pos
 - User provides correct credentials
 - Login is confirmed
 
+## Activity Diagram
+<img src="ActivityDiagram_LOGIN.png" alt="Activity Diagram Login" style="width:800px;"/>
+
 # 3. Special Requirements
 - The user already has set up an account
 

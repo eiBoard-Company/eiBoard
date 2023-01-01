@@ -21,6 +21,9 @@ This use case allows anyone to register and create an account. The data will be 
 - user clicks on Sign Up button
 - data will be validated and sent to the database
 
+## Activity Diagram
+<img src="ActivityDiagram_SIGN_UP.png" alt="Activity Diagram Sign Up" style="width:800px;"/>
+
 # 3. Special Requirements
 User needs an email account to register
 
