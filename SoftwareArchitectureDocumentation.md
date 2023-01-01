@@ -110,14 +110,14 @@ The whole application progress is stored on GitHub and documented by a WordPress
 [This section illustrates how the software actually works by giving a few selected use-case (or scenario) realizations, and explains how the various design model elements contribute to their functionality.]
  
 ## 5. Logical View
-[This section describes the architecturally significant parts of the design model, such as its decomposition into subsystems and packages. And for each significant package, its decomposition into classes and class utilities. You should introduce architecturally significant classes and describe their responsibilities, as well as a few very important relationships, operations, and attributes.]
 
 ### 5.1 Overview
-[This subsection describes the overall decomposition of the design model in terms of its package hierarchy and layers.]
+Our Flutter Frontend calls the different Controllers on an Action. In the image the different packages of the backend are displayed.
+
+<img src="klassendiagramm backend.png" alt="Class Diagram" style="width:600px;"/>
 
 ### 5.2 Architecturally Significant Design Packages
-[For each significant package, include a subsection with its name, its brief description, and a diagram with all significant classes and packages contained within the package.
-For each significant class in the package, include its name, brief description, and, optionally, a description of some of its major responsibilities, operations, and attributes.]
+We use [Material Design](https://m3.material.io/) for our Frontend. Material is a design system created by Google to help build high-quality digital experiences for Android, iOS, Flutter, and the web.
 
 ## 6. Process View
 Questions to answer when drawing component diagram
