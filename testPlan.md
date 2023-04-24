@@ -88,23 +88,14 @@ This test plan is written primarily for internal documentation reasons. It is me
 
 ### 1.5  References
 
+//TODO: add Use Cases
+
 | Title                                                                   | Date       | Publishing organization   |
 | ------------------------------------------------------------------------|:----------:| ------------------------- |
-| [Blog](https://commonplayground.wordpress.com)                          | Oct. 2018  | PinguCrew                 |
-| [GitHub Repository](https://github.com/nilskre/CommonPlayground)        | Oct. 2018  | PinguCrew                 |
+| [Blog](https://eicompany.wordpress.com/)                          | Oct. 2022  | eiCompany                 |
 | [UC1 Posting a Session](../use_cases/UC1_Post_Session.md)               | Oct. 2018  | PinguCrew                 |
-| [UC2 Joining a Session](../use_cases/UC2_Join_Session.md)               | Oct. 2018  | PinguCrew                 |
-| [UC3 Session Overview](../use_cases/UC3_Session_Overview.md)            | Oct. 2018  | PinguCrew                 |
-| [UC4 Create an Account](../use_cases/UC4_Create_Account.md)             | Oct. 2018  | PinguCrew                 |
-| [UC5 Login](../use_cases/UC5_Login.md)                                  | Oct. 2018  | PinguCrew                 |
-| [UC6 Logout](../use_cases/UC6_Logout.md)                                | Nov. 2018  | PinguCrew                 |
-| [UC7 Keeping Track of Your Sessions](../use_cases/UC7_Keeping_Track.md) | Apr. 2019  | PinguCrew                 |
-| [UC8 Leaving a Session](../use_cases/UC8_Leave_Session.md)              | Apr. 2019  | PinguCrew                 |
-| [UC9 Finding a Session](../use_cases/UC9_Leave_Session.md)              | Apr. 2019  | PinguCrew                 |
-| [UC10 Getting in touch](../use_cases/UC10_Getting_In_Touch.md)          | Apr. 2019  | PinguCrew                 |
-| [Test Plan](./TestPlan.md)                                              | Apr. 2019  | PinguCrew                 |
-| [SRS](../SoftwareRequirementsSpecification.md)                          | Oct. 2018  | PinguCrew                 |
-| [SAD](../SoftwareArchitectureDocument.md)                               | Oct. 2018  | PinguCrew                 |
+| [SRS](https://github.com/eiBoard-Company/eiBoard/blob/main/SoftwareRequirementsSpecification.md)                          | Oct. 2023  | eiCompany                 |
+| [SAD](https://github.com/eiBoard-Company/eiBoard/blob/main/SoftwareArchitectureDocumentation.md)                               | Jan. 2023  | eiCompany                 |
 
 ### 1.6 Document Structure
 
