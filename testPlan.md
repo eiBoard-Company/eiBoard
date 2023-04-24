@@ -20,7 +20,7 @@
     - [5. Test Approach](#5-test-approach)
         - [5.1 Testing Techniques and Types](#51-testing-techniques-and-types)
             - [5.1.1 Unit Testing](#511-unit-testing)
-            - [5.1.2 User Interface Testing](#512-user-interface-testing)
+            - [5.1.2 UI Testing](#512-ui-testing)
             - [5.1.3 Integration Testing (API Testing)](#513-integration-testing-api-testing)
             - [5.1.4 Data and Database Integrity Testing](#514-data-and-database-integrity-testing)
     - [6. Entry and Exit Criteria](#6-entry-and-exit-criteria)
@@ -177,7 +177,18 @@ As you define each aspect of the approach, you should update Section 10, Respons
 TODO: jeweils Tabelle einfügen
 
 #### 5.1.2 UI Testing
-TODO: jeweils Tabelle einfügen
+
+UI testing evaluates the application's performance from a user's point of view, with the aim of verifying that the user interface operates as intended.
+
+|                       | Description                                                          |
+|-----------------------|----------------------------------------------------------------------|
+|Technique Objective    | Test application automated from the perspective of the user through UI Test |
+|Technique              | Writing Gherkin `.feature` files with clearly defined steps and the expected result. The test implementation of the steps use the Android Espresso library to serve the emulator. [Further information](https://commonplayground.wordpress.com/week-5-testing-with-cucumber//) |
+|Oracles                | Expect that the steps of the test are executed successfully and the UI behaves as planned. Test execution logs results to the command line, logs in CI/CD Tool (Travis) |
+|Required Tools         | Dependencies of Cucumber and Espresso (official Android UI test library) and an Implementation of a test runner based on JUnit 4 to execute UI tests with Cucumber and Espresso |
+|Success Criteria       | All UI tests pass.
+|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground)   |
+|Special Considerations | - |
 
 #### 5.1.3 Integration Testing (API Testing)
 TODO: jeweils Tabelle einfügen
