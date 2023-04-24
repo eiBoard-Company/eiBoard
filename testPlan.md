@@ -65,7 +65,6 @@ This document shows the following types of testing:
 - Unit Testing
 - Integration Testing
 - UI Testing (End-to-End Tests)
-- API Testing
 
  Not covered are any tests related to performance and scale or usability.
 
@@ -130,27 +129,39 @@ Each mission provides a different context to the test effort and alters the way 
 
 ## 3. Target Test Items
 
-The listing below identifies those test itemssoftware, hardware, and supporting product elements that have been identified as targets for testing. This list represents what items will be tested. 
-[Provide a high level list of the major target test items. This list should include both items produced directly by the project development team, and items that those products rely on; for example, basic processor hardware, peripheral devices, operating systems, third-party products or components, and so forth. Consider grouping the list by category and assigning relative importance to each motivator.]
+The listing below identifies those test items: software, hardware, and supporting product elements that have been identified as targets for testing. This list represents what items will be tested. 
 
+- FLutter Frontend
+- Server Backend (and APIs)
 
 ## 4. Outline of Planned Tests
-[This section provides a high-level outline of the testing that will be performed. The outline in this section represents a high level overview of both the tests that will be performed and those that will not.] 
+
 ### 4.1 Outline of Test Inclusions
 
-[Provide a high level outline of the major testing planned for the current iteration. Note what will be included in the plan and record what will explicitly not be included in the section titled Outline of Test Exclusions.]
+*Frontend: FLutter application: Web Client*:
+
+- UI testing
+- Unit testing
+
+*Backend: Spring Boot Application*:
+
+- Unit testing
+- Integration testing
+
+The tests themself will not be tested and will not account into code coverage.
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
 
-[Separately outline test areas you suspect might be useful to investigate and evaluate, but that have not been sufficiently researched to know if they are important to pursue.]
+n/a
 
 ### 4.3 Outline of Test Exclusions
 
-[Provide a high level outline of the potential tests that might have been conducted but that have been explicitly excluded from this plan. If a type of test will not be implemented and executed, indicate this in a sentence stating the test will not be implemented or executed and stating the justification, such as:
-•	“These tests do not help achieve the evaluation mission.” 
-•	“There are insufficient resources to conduct these tests.” 
-•	“These tests are unnecessary due to the testing conducted by xxxx.”
-As a heuristic, if you think it would be reasonable for one of your audience members to expect a certain aspect of testing to be included that you will not or cannot address, you should note it’s exclusion: If the team agrees the exclusion is obvious, you probably don’t need to list it.]
+Because of time and resource constraints we will not do:
+
+- Stress tests
+- Load/Performance tests
+- Usability tests
+- any further tests
 
 ## 5. Test Approach
 [The Test Approach presents the recommended strategy for designing and implementing the required tests. Sections 3, Target Test Items, and 4, Outline of Planned Tests, identified what items will be tested and what types of tests would be performed. This section describes how the tests will be realized. 
