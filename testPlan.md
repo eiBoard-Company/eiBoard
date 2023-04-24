@@ -95,7 +95,7 @@ This test plan is written primarily for internal documentation reasons. It is me
 | [UC4  Creating an account](https://github.com/eiBoard-Company/eiBoard/blob/main/UC4_CREATE_ACCOUNT.md)               | Oct. 2022  | eiCompany                 |
 | [UC5 Logging in](https://github.com/eiBoard-Company/eiBoard/blob/main/UC5_LOGIN.md)               | Oct. 2022  | eiCompany                 |
 | [UC6 Logging out](https://github.com/eiBoard-Company/eiBoard/blob/main/UC6_LOGGING_OUT.md)               | Oct. 2022  | eiCompany                 |
-| [UC7 Classes]https://github.com/eiBoard-Company/eiBoard/blob/main/UC7_CLASSES.md)               | Oct. 2022  | eiCompany                 |
+| [UC7 Classes](https://github.com/eiBoard-Company/eiBoard/blob/main/UC7_CLASSES.md)               | Oct. 2022  | eiCompany                 |
 | [UC8 Settings](https://github.com/eiBoard-Company/eiBoard/blob/main/UC8_SETTINGS.md)              | Oct. 2022  | eiCompany                 |
 | [SRS](https://github.com/eiBoard-Company/eiBoard/blob/main/SoftwareRequirementsSpecification.md)                          | Oct. 2023  | eiCompany                 |
 | [SAD](https://github.com/eiBoard-Company/eiBoard/blob/main/SoftwareArchitectureDocumentation.md)                               | Jan. 2023  | eiCompany                 |
