@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta-charset="uft-8"/>
+        <title>Risk Management Table</title>
+    </head>
+    <body>
+        <table border="1px solid black">
+            <thead>
+                <tr>
+                    <th>Risk ID</th>
+                    <th>Category</th>
+                    <th>Risk Description</th>
+                    <th>Probabilty</th>
+                    <th>Impact</th>
+                    <th>Risk Score</th>
+                    <th>Mitigation Strategy</th>
+                    <th>Indicator</th>
+                    <th>Contigency Plan</th>
+                    <th>Responsible</th>
+                    <th>Status</th>
+                    <th>Last motified date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Organisation</td>
+                    <td>Teammitglied verlässt die DHBW unerwartet / Exmatrikulation</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>Teamübergreifendes Wissen / Keine einzelnen Teams für Backend / Frontend</td>
+                    <td>Teamübergreifendes Wissen / Keine einzelnen Teams für Backend / Frontend</td>
+                    <td>Neue Aufgabenverteilung innerhalb des Teams, ggf. Anforderungen an Anwendung minimieren</td>
+                    <td>Team</td>
+                    <td>Offen</td>
+                    <td>17.04.2023</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Projekt</td>
+                    <td>Source Code geht verloren / wird gelöscht</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>Version Control Tools nutzen, Github etc, jeder hat lokale Version auf Rechner</td>
+                    <td>Source Code fehlt, Probleme bei Github, kein Zugriff mehr auf Repository</td>
+                    <td>Github nutzen und lokal Daten absichern</td>
+                    <td>Team</td>
+                    <td>Offen</td>
+                    <td>17.04.2023</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Technical</td>
+                    <td>Benutzte Software wird nicht mehr weiternetwickelt</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>LTS Software nutzen und auf moderne Softwarelösungen setzen</td>
+                    <td>Lange keine Updates mehr, Webseite und Dokumentation sind nicht mehr die modernsten</td>
+                    <td>Plan B erarbeiten und umsetzen, regelmäßig Patch Notes lesen</td>
+                    <td>Technical Lead</td>
+                    <td>Geschlossen</td>
+                    <td>10.04.2023</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Technical</td>
+                    <td>Serverausfall</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>Datenbackup</td>
+                    <td>Lange Antwortzeit, keine Verbindung zum Server</td>
+                    <td>Nutzer auf Downtime hinweisen und Problem so schnell wie möglich beheben</td>
+                    <td>Team</td>
+                    <td>Offen</td>
+                    <td>16.04.2023</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Technical</td>
+                    <td>Verbindung Frontend/Backend nicht verfügbar</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>27</td>
+                    <td>Regelmäßige Tests nach Veränderungen im Code</td>
+                    <td>Stundenplan kann nicht geladen werden, 404/500 HTTP Error</td>
+                    <td>Bug hunting, Nutzer informieren über Downtime</td>
+                    <td>Team, evtl. Backend-/Frontendspezialisten</td>
+                    <td>Offen</td>
+                    <td>18.04.2023</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Technical</td>
+                    <td>Dependencies veraltet</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>18</td>
+                    <td>Regelmäßig Updates durchführen</td>
+                    <td>Errormeldung in Source Code</td>
+                    <td>Jenkins Pipeline, welche bei jedem Durchlauf automatisch Dependencies updatet</td>
+                    <td>Team</td>
+                    <td>Offen</td>
+                    <td>17.04.2023</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Projekt/Technical</td>
+                    <td>Merge conflicts / Änderungen können nicht comittet/gepusht werden</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>Vor Änderungen Repository pull/fetch/update, Code refactoring</td>
+                    <td>Merge conflict Nachricht, Commit/Push konnte nicht durchgeführt werden</td>
+                    <td>Rebase, Fehler beheben</td>
+                    <td>Team, evtl. Backend-/Frontendspezialisten</td>
+                    <td>Offen</td>
+                    <td>17.04.2023</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Organisation</td>
+                    <td>Softwareanforderung falsch interpretiert</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Softwareanforderungen klar absprechen und dokumentieren</td>
+                    <td>Unklarheiten im Team</td>
+                    <td>Erneut Absprache über Anforderungen</td>
+                    <td>Team</td>
+                    <td>Offen</td>
+                    <td>01.10.2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
