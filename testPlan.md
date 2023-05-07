@@ -22,7 +22,6 @@
             - [5.1.1 Unit Testing](#511-unit-testing)
             - [5.1.2 UI Testing](#512-ui-testing)
             - [5.1.3 Integration Testing (API Testing)](#513-integration-testing-api-testing)
-            - [5.1.4 Data and Database Integrity Testing](#514-data-and-database-integrity-testing)
     - [6. Entry and Exit Criteria](#6-entry-and-exit-criteria)
         - [6.1 Test Plan](#61-test-plan)
             - [6.1.1 Test Plan Entry Criteria](#611-test-plan-entry-criteria)
@@ -109,7 +108,7 @@ eiBoard aims to provide users with an easy-to-use and feature-rich calendar appl
 
 Testing serves to ensure that the written code does what it is intended to do, so users will be able to enjoy the best app version possible. Testing is an integral part of ensuring that eiBoard is of high quality, meets user requirements, and functions as intended, making it an essential component of the development process.
 
-Testing can help identify defects, errors, and bugs early in the development process, making it easier and less expensive to fix these issues. It can also help ensure that the application is reliable, efficient, and user-friendly, leading to a better user experience and increased user satisfaction.
+Testing can help identify defects, errors, and bugs early in the development process, making it easier and less expensive to fix these issues. It can also help ensure that the application is reliable and efficient, leading to a better user experience and increased user satisfaction.
 
 In our case testing is very important as the application serves as an important tool for users to manage their schedules and tasks. Any errors or bugs in the application could result in incorrect or missing information, leading to confusion and potential negative consequences. Additionally, the application relies on multiple subsystems and APIs, making thorough testing even more critical to ensure that all parts of the application are working together seamlessly.
 
@@ -122,26 +121,24 @@ The focus of the testing effort will be on identifying critical defects that cou
 
 The following elements will motivate the testing effort for eiBoard in this iteration:
 
-1. **Quality risks**: Testing will ensure that the application meets the desired level of quality and functionality, and will identify any areas where improvements can be made.
+1. **Quality risks and Use cases**: Testing will ensure that the application meets the desired level of quality and functionality, and will identify any areas where improvements can be made. Testing will focus on ensuring that the application meets the needs and requirements of its users.
 
 2. **Technical risks**: The application relies on multiple subsystems and APIs, so testing will be crucial to ensure that all parts of the application are working together seamlessly.
 
-3. **Use cases**: Testing will focus on ensuring that the application meets the needs and requirements of its users, and will identify any areas where improvements can be made to enhance the user experience.
-
-4. **Functional requirements**: Testing will ensure that the application meets its intended functional requirements, and will identify any areas where improvements can be made to enhance its functionality.
+3. **Functional requirements**: Testing will ensure that the application meets its intended functional requirements, and will identify any areas where improvements can be made to enhance its functionality.
 
 ## 3. Target Test Items
 
 The listing below identifies those test items: software, hardware, and supporting product elements that have been identified as targets for testing. This list represents what items will be tested. 
 
-- FLutter Frontend
+- Flutter Frontend
 - Server Backend (and APIs)
 
 ## 4. Outline of Planned Tests
 
 ### 4.1 Outline of Test Inclusions
 
-*Frontend: FLutter application: Web Client*:
+*Frontend: Flutter application: Web Client*:
 
 - UI testing
 - Unit testing
@@ -163,21 +160,27 @@ Because of time and resource constraints we will not do:
 
 - Stress tests
 - Load/Performance tests
+- Database tests
 - Usability tests
 - any further tests
 
 ## 5. Test Approach
-[The Test Approach presents the recommended strategy for designing and implementing the required tests. Sections 3, Target Test Items, and 4, Outline of Planned Tests, identified what items will be tested and what types of tests would be performed. This section describes how the tests will be realized. 
-One aspect to consider for the test approach is the techniques to be used. This should include an outline of how each technique can be implemented, both from a manual and/or an automated perspective, and the criterion for knowing that the technique is useful and successful. For each technique, provide a description of the technique and define why it is an important part of the test approach by briefly outlining how it helps achieve the Evaluation Mission or addresses the Test Motivators.
-Another aspect to discuss in this section is the Fault or Failure models that are applicable and ways to approach evaluating them.
-As you define each aspect of the approach, you should update Section 10, Responsibilities, Staffing, and Training Needs, to document the test environment configuration and other resources that will be needed to implement each aspect.]
-
 
 ### 5.1 Testing Techniques and Types
 
 #### 5.1.1 Unit Testing
 
-TODO: jeweils Tabelle einfügen
+Unit testing ensures, that the tested sourcecode works as expected. Therefore small parts of the sourcecode will be tested independently.
+
+|                       | Description                                                         |
+|-----------------------|---------------------------------------------------------------------|
+|Technique Objective    | Ensure that each unit of code (functions, methods, classes) works as intended                  |
+|Technique              | Implement test methods using JUnit Framework, Mockito library (Backend) and flutter_test library (Frontend) |
+|Oracles                | Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed|
+|Required Tools         | JUnit 5 and Mockito Dependencies in Backend, and flutter_test library in Frontend. CI/CD Pipeline with test stages                    |
+|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 60% (Backend)    |
+|Special Considerations | -                                                                   |
+
 
 #### 5.1.2 UI Testing
 
@@ -186,18 +189,24 @@ UI testing evaluates the application's performance from a user's point of view, 
 |                       | Description                                                          |
 |-----------------------|----------------------------------------------------------------------|
 |Technique Objective    | Test application automated from the perspective of the user through UI Test |
-|Technique              | Writing Gherkin `.feature` files with clearly defined steps and the expected result. The test implementation of the steps use the Android Espresso library to serve the emulator. [Further information](https://commonplayground.wordpress.com/week-5-testing-with-cucumber//) |
-|Oracles                | Expect that the steps of the test are executed successfully and the UI behaves as planned. Test execution logs results to the command line, logs in CI/CD Tool (Travis) |
-|Required Tools         | Dependencies of Cucumber and Espresso (official Android UI test library) and an Implementation of a test runner based on JUnit 4 to execute UI tests with Cucumber and Espresso |
+|Technique              | Writing test cases using Selenium WebDriver API and Java to simulate user interactions with the application's UI (mainly use cases).  |
+|Oracles                | Expect that the UI elements are displayed and behave as expected during test execution. Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed. |
+|Required Tools         | Selenium WebDriver API and added dependencies for Java Maven project. CI/CD Pipeline with test stages |
 |Success Criteria       | All UI tests pass.
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground)   |
 |Special Considerations | - |
 
 #### 5.1.3 Integration Testing (API Testing)
-TODO: jeweils Tabelle einfügen
 
-#### 5.1.4 Data and Database Integrity Testing
-TODO: jeweils Tabelle einfügen
+API Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of API testing is to ensure, that the provided APIs of the Backend behave as expected.
+
+|                       | Description                                                          |
+|-----------------------|----------------------------------------------------------------------|
+|Technique Objective    | Ensure that the implemented API functions correctly and returns expected results                                 |
+|Technique              | Implement test methods using JUnit Framework and REST-assured library to perform HTTP requests and verify responses  |            |
+|Oracles                | Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed |
+|Required Tools         | JUnit 5 and REST-assured library dependencies in Backend                                    |
+|Success Criteria       | All tests pass. Coverage is above 60%                                |
+|Special Considerations | APIs must be in a testable state, e.g., mock objects are used for dependencies that may not be available during tests |
 
 ## 6. Entry and Exit Criteria
 
