@@ -100,32 +100,35 @@ This test plan is written primarily for internal documentation reasons. It is me
 | [SAD](https://github.com/eiBoard-Company/eiBoard/blob/main/SoftwareArchitectureDocumentation.md)                               | Jan. 2023  | eiCompany                 |
 
 ### 1.6 Document Structure
-[This subsection outlines what the rest of the Test Plan contains and gives an introduction to how the rest of the document is organized. This section may be eliminated if a Table of Contents is used.]
+n/a
 
 ## 2. Evaluation Mission and Test Motivation
- [Provide an overview of the mission and motivation for the testing that will be conducted in this iteration.]
 
 ### 2.1 Background
+eiBoard aims to provide users with an easy-to-use and feature-rich calendar application that can help them manage their schedules and tasks more efficiently. The project has been in development for several months and has gone through several iterations of design and development. The application is designed to work on both Android and iOS platforms, and utilizes a clean software architecture with separate model view and controller, thanks to the implementation of the MVC pattern in both the frontend and backend subsystems. You can read more on our architecture [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/SoftwareArchitectureDocumentation.md).
 
-[Provide a brief description of the background surrounding why the test effort defined by this Test Plan will be undertaken. Include information such as the key problem being solved, the major benefits of the solution, the planned architecture of the solution, and a brief history of the project. Where this information is defined in other documents, you can include references to those other more detailed documents if appropriate. This section should only be about three to five paragraphs in length.]
+Testing serves to ensure that the written code does what it is intended to do, so users will be able to enjoy the best app version possible. Testing is an integral part of ensuring that eiBoard is of high quality, meets user requirements, and functions as intended, making it an essential component of the development process.
+
+Testing can help identify defects, errors, and bugs early in the development process, making it easier and less expensive to fix these issues. It can also help ensure that the application is reliable, efficient, and user-friendly, leading to a better user experience and increased user satisfaction.
+
+In our case testing is very important as the application serves as an important tool for users to manage their schedules and tasks. Any errors or bugs in the application could result in incorrect or missing information, leading to confusion and potential negative consequences. Additionally, the application relies on multiple subsystems and APIs, making thorough testing even more critical to ensure that all parts of the application are working together seamlessly.
 
 ### 2.2 Evaluation Mission
-[Provide a brief statement that defines the mission for the evaluation effort in the current iteration. This statement might incorporate one or more concerns including:
-•	find as many bugs as possible
-•	find important problems, assess perceived quality risks
-•	advise about perceived project risks
-•	certify to a standard
-•	verify a specification (requirements, design or claims)
-•	advise about product quality, satisfy stakeholders
-•	advise about testing
-•	fulfill process mandates 
-•	and so forth
-Each mission provides a different context to the test effort and alters the way in which testing should be approached.]
+As mentioned above testing can help identify defects, errors, and bugs early in the development process, making it easier and less expensive to fix these issues. With this testing is a crucial part of the development process.
 
+The focus of the testing effort will be on identifying critical defects that could negatively impact the user experience, as well as identifying any potential quality risks that could impact the reliability of the application.
 
 ### 2.3 Test Motivators
 
-[Provide an outline of the key elements that will motivate the testing effort in this iteration. Testing will be motivated by many thingsquality risks, technical risks, project risks, use cases, functional requirements, non-functional requirements, design elements, suspected failures or faults, change requests, and so forth.]
+The following elements will motivate the testing effort for eiBoard in this iteration:
+
+1. **Quality risks**: Testing will ensure that the application meets the desired level of quality and functionality, and will identify any areas where improvements can be made.
+
+2. **Technical risks**: The application relies on multiple subsystems and APIs, so testing will be crucial to ensure that all parts of the application are working together seamlessly.
+
+3. **Use cases**: Testing will focus on ensuring that the application meets the needs and requirements of its users, and will identify any areas where improvements can be made to enhance the user experience.
+
+4. **Functional requirements**: Testing will ensure that the application meets its intended functional requirements, and will identify any areas where improvements can be made to enhance its functionality.
 
 ## 3. Target Test Items
 
