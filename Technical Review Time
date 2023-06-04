@@ -46,6 +46,18 @@ Reviewed it to explain the adaptive list to the backend team.
 **Julian**
 Julian was giving a us a review about the backend unit tests and about jenkins pipelines.
 
+1. Topic: Unit tests backend
+The most unit test are written for the services. Because data flow and methods to perform actions on the Database are defined in the services.
+The entry service consists of four methods: save, delete, findbyID and getAllEntries.
+Julian was working with mockup repositories because it made writing the unit tests easier.
+Method save: a new entry gets made -> the mockup repository checks the return of the entry and if the are the same on both.
+Method delete: entryID gets deleted and the deletion gets confirmed.
+Method findByID: checks if the found entry is the same as the one that got created. If this is not the case: An exception gets thrown. 
+Method getAllEntries: creating a list via new entry. Getting back the list via getAllEntries.
+
+
+
+
 
 1. Thema: Unit Tests Backend
   Hauptsächlich Unit Tests für services da dort datenfluss und methoden definiert.
