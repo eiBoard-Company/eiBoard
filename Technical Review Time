@@ -185,34 +185,19 @@ Running through code
 
 
 ## Outcome from the meeting
-e.g., action items (with responsible person and deadline), best practices, lessons learned.
 
-person service test noch mcoken
-alle unit tests mocken
+From the meeting we learned that it is much easier to work on unit tests when they are done with mockup data.
+The code we write is of a good clarity and clearness.
+Especially the variable names are well chosen and meaningful.
+A few "help comments" still need to be deleted.
+A few small details in the design may need to be changed.
 
-code ist clean/übersichtlich, gute variablennamen
-z.T. noch kommentare und markierkommentare löschen
-frontend datenbearbeitung werden ausgegraut wenn fertig bearbeitet aber trotzdem angezeigt
+The teams have agreed on how to proceed. This is especially important, since the backend is now to be interlocked with the frontend.
 
+There is still the problem that the frontend can not yet access the backend.
+Various cors policy guidelines still need to be worked on to enable access to the backend.
 
-nächste schritte wurden besprochen, die teams haben sich ausgetauscht was sie noch/als nächstes machen werden.
-Stylingoptionen besprochen.
-einzelne stylebugs besprochen
+Each input tag must still be provided with a user ID.
 
-
-
-zurückpfeile und burger menü sieht teils noch animiert aus. Sehr ähnlich zu smartphone app. in webapp eher noch alleinstellungsmerkmal
-
-
-frontend kann noch nicht auf backend zugreifen
-cors policy. vom frontend auf backend noch einrichten
-
-jeder eintrag braucht noch eine ID (User, Todo-Karte usw)
-
-
-was noch genmacht werden musss: alles an mysql anbinden um daten abzusichern
-keycloak anbinden
-frontend muss dann mit dem user bei keycloak authentifizieren. evtl. controller zum passwort ändern.
-
-
-für projektmanagement fehlt noch metrikzeugs (vor zwei vorlesungen)
+Furthermore the data should be connected to mysql via keycloak to secure the data.
+The frontend will have to authenticate the user with keycloak.
