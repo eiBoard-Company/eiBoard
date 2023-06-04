@@ -13,7 +13,7 @@ Projectmanagement: Marius
 
 ## Goal/Focus
 **Eileen**
-Giving us a review about the main screen and where you will find yourself after logging in.
+Eileen was giving us a review about the main screen and where you will find yourself after logging in.
 Unsecurities about the style/design of the menue.
 Question rose if it should be in the style of three dots aka burger menu and if it should be closed via an "arrow back" icon.
 And hoew it usually is - everyone has a different taste. We could not disagree which looks better but surely disagreede that both ways a just fine.
@@ -25,32 +25,28 @@ This should get changed so it can get clsed via the burger menu.
 Another point to consider was the initializing of a keyword. Due to security reasons it should get tipied in two times 
 and get compared to make sure that a writing mistake will not likely to appear while setting a new password.
 
+Reviewed it to get an honest opinion about the design of the menu.
 
 
 **Niklas**
+Niklas was giving a us a review about the list that will get filled up with data from the backend and will give back a tasklist object.
+The list serves the data communication between frontend and backend.
+//The file: todo_list_screeen.dart
+It is possibly to use filters for the list such as a filter for the dates. 
+The Backend needs a function to filter the list for the actual date, which tasks should have been solved already and which tasks should get 
+done until today / until the end of the current week
+// The files: task_list_object.dart, backend_rapla.dart
+Styleattributes are taken care of.
+Data taken care of (list attributes-> cannot put a number instead string)
 
-adaptive liste ide später vom bakcend gefüllt wird und infos auf seite gibt tasklist object
-
-todo_list_screeen.dart
-
-liste wird nach zeiten gefiltert. Backend braucht funktion zum feststellen was aktuelles datum ist, welche aufgben überfällig sind, welche bis heute und bis in deiser woche erledigt weden müssern.
-task_list_object.dart
-backend_rapla.dart
-
-listenobjekte aus backend holen
-
-liste füüllen über frontend
-
-zukunft:
-listenelemente alles was bearbeitet wird wird über liste zum backend transportiert.
-
-Styleattributes taken care of
-data taken care of (list attributes-> cannot put a number instead string)
-
+Reviewed it to explain the adaptive list to the backend team.
 
 
 
 **Julian**
+Julian was giving a us a review about the backend unit tests and about jenkins pipelines.
+
+
 1. Thema: Unit Tests Backend
   Hauptsächlich Unit Tests für services da dort datenfluss und methoden definiert.
   Um aktionen auf db durchzuführen.
@@ -104,6 +100,10 @@ zukunft: wenn tests erfolgreich soll neunes docker image gebildet, und in regist
 
 
 **Matteo** 
+Matteo was giving a us a review about
+
+
+
 Controller und Swagger
 DateController.java
 
@@ -139,6 +139,10 @@ zukunft: event und task controller sowie modellklassen
 
 
 //of the review meeting (including why do you choose this part for review)
+
+
+
+
 ## Components for Review
 **Eileen**
 page.dart
@@ -163,9 +167,11 @@ unit test files:
 
 ## Criteria of review 
 **Eileen**
+code quality, performance, security, design
 
 
 **Niklas**
+code quality, performance, data communication
 
 
 
@@ -176,9 +182,11 @@ unit test files:
 
 **Matteo** 
 
-
-
 (per component, if each component has different criteria), e.g., code quality, performance, security, scalability, maintainability, or any other relevant factors.
+
+
+
+
 ## Review methodology
 
 **Eileen**
@@ -200,7 +208,7 @@ Running through code
 
 
 
-e.g. formal inspections, walkthroughs, code reviews, etc.
+
 ## Outcome from the meeting
 e.g., action items (with responsible person and deadline), best practices, lessons learned.
 
