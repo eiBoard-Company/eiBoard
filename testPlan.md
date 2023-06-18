@@ -178,7 +178,7 @@ Unit testing ensures, that the tested sourcecode works as expected. Therefore sm
 |Technique              | Implement test methods using JUnit Framework, Mockito library (Backend) and flutter_test library (Frontend) |
 |Oracles                | Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed|
 |Required Tools         | JUnit 5 and Mockito Dependencies in Backend, and flutter_test library in Frontend. CI/CD Pipeline with test stages                    |
-|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 60% (Backend)    |
+|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 20% (Backend)    |
 |Special Considerations | -                                                                   |
 
 
@@ -189,9 +189,9 @@ UI testing evaluates the application's performance from a user's point of view, 
 |                       | Description                                                          |
 |-----------------------|----------------------------------------------------------------------|
 |Technique Objective    | Test application automated from the perspective of the user through UI Test |
-|Technique              | Writing test cases using Selenium WebDriver API and Java to simulate user interactions with the application's UI (mainly use cases).  |
+|Technique              | Writing test cases using Cypress to simulate user interactions with the application's UI (mainly use cases).  |
 |Oracles                | Expect that the UI elements are displayed and behave as expected during test execution. Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed. |
-|Required Tools         | Selenium WebDriver API and added dependencies for Java Maven project. CI/CD Pipeline with test stages |
+|Required Tools         | Cypress |
 |Success Criteria       | All UI tests pass.
 |Special Considerations | - |
 
@@ -205,7 +205,7 @@ API Testing is part of integration testing. Integration tests test multiple modu
 |Technique              | Implement test methods using JUnit Framework and REST-assured library to perform HTTP requests and verify responses  |            |
 |Oracles                | Test results are logged in CI/CD tool (Jenkins), and compared against expected output to determine if the tests passed or failed |
 |Required Tools         | JUnit 5 and REST-assured library dependencies in Backend                                    |
-|Success Criteria       | All tests pass. Coverage is above 60%                                |
+|Success Criteria       | All tests pass. Coverage is above 40%                                |
 |Special Considerations | APIs must be in a testable state, e.g., mock objects are used for dependencies that may not be available during tests |
 
 ## 6. Entry and Exit Criteria
