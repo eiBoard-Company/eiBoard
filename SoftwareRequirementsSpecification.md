@@ -108,12 +108,12 @@ This section will explain the different use cases, you could see in the Use Case
 - 3.1.9 Managing database
 
 #### 3.1.1 Rapla calendar/Schedule
-To keep track of all lectures users want to see their schedules in the app.
+To keep track of all lectures users want to see their schedules in the app. This will be realized with the help of an Rapla API. The user can do a request with a timeperiod or just one single date via GET Request to the Rapla API. With the help of the date, Rapla will send all data of lectures of this timestamp back to the user.
 
 [Rapla calendar/Schedule](UC1_SCHEDULE.md)
 
 #### 3.1.2 Task/To do List
-To keep track of all things to do users want to see their to dos as well as adding to dos.
+To keep track of all things to do users want to see their to dos as well as adding to dos. In the frontend there will be the opportunity to add new tasks. The new added task will be saved by a database in the backend. After witing new tasks, the frontend will show these. There is also the opportunity to edit them-
 
 [Tasks/To do List](UC2_TASKS.md)
 
@@ -123,12 +123,12 @@ To keep their schedule accurate users want to create new events.
 [Creating events](UC3_EVENTS.md)
 
 #### 3.1.4 Creating an account
-To identify all users we need an account system. This account system enables us to build important functions such as a personalized overview over all tasks and appointments.
+To identify all users we need an account system. This account system enables us to build important functions such as a personalized overview over all tasks and appointments. The user information will be stored into a third party system named "Keycloak".
 
 [Creating an account](UC4_CREATE_ACCOUNT.md)
 
 #### 3.1.5 Logging in
-The app will provide the possibility to register and log in. This will also make the usability easier as a user won’t have to add all his appointments again.
+The app will provide the possibility to register and log in. This will also make the usability easier as a user won’t have to add all his appointments again. The register and logging in process will be managed by Keylcoak. Keycloak uses the OAuth 2.0 standard to identify and authorize users which logged in or signed in.
 
 [Logging in](UC5_LOGIN.md)
 
@@ -143,7 +143,7 @@ To have a good overview users want to view their classes.
 [View classes](UC7_CLASSES.md)
 
 #### 3.1.8 Settings
-To have a good user experience the user needs settings.
+To have a good user experience the user needs settings. The settings are summarized by a name and password change system and an "About Us" page.
 
 [View settings](UC8_SETTINGS.md)
 
