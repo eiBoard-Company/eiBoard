@@ -180,6 +180,6 @@ Availability: Set notification as default. Save timestamps for notification in c
 
 <img src="availabilityTactics_vol2.png" alt="Availability Tactics" style="width:600px;"/>
 
-<img src="Interoperability Tactics Diagram v_2.png" alt="Availability Tactics" style="width:600px;"/>
+<img src="availabilityTactics.png" alt="Availability Tactics" style="width:600px;"/>
 Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Interoperability%20Checklist.docx) for the additional Interoperability Tactics Checklist.
 
