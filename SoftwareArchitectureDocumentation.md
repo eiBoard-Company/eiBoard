@@ -178,8 +178,6 @@ Interoperability: Connect with rapla Api to show data as entry in the calendar. 
 Availability: Set notification as default. Save timestamps for notification in cache to avoid a “sleepy entry”. Check the availability before making alarm. If Error occurs send alarm message to user and developer. (Alarm will be there in any case, entry wont be overslept). Write logs to make bugfixing easier.
 
 
-<img src="availabilityTactics_vol2.png" alt="Availability Tactics" style="width:600px;"/>
-
 <img src="availabilityTactics.png" alt="Availability Tactics" style="width:600px;"/>
 Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Interoperability%20Checklist.docx) for the additional Interoperability Tactics Checklist.
 
