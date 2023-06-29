@@ -225,7 +225,7 @@ The User interfaces that will be implemented are:
 (n/a)
 
 #### 3.9.3 Software Interfaces
-The app will be runnable on Android 4.1 and higher, and iOS 11 and higher.
+The application should be runnable on devices running Android 4.1 and higher, as well as iOS 11 and higher. This encompasses a wide range of mobile devices based on these operating system versions, including smartphones and tablets. The app should provide an optimized user interface for both Android and iOS users, ensuring a seamless and consistent user experience across both platforms. By supporting these operating system versions, both existing and future users of the app will have unrestricted access to its functionalities without any limitations in terms of device compatibility.
 
 #### 3.9.4 Communication Interfaces
 The server and hardware will communicate using the http protocol. 
