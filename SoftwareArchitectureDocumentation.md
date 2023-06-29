@@ -181,3 +181,26 @@ Availability: Set notification as default. Save timestamps for notification in c
 <img src="availabilityTactics.png" alt="Availability Tactics" style="width:600px;"/>
 Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Interoperability%20Checklist.docx) for the additional Interoperability Tactics Checklist.
 
+## 12. Interoperability Tactics Checklist
+# Allocation of Responsibilities
+Our system needs to interoperate with Rapla.
+Frequent Ping to ensure availability of the connection, Accept/Reject and Close connections, Log requests for later (e.g. Bugfixing, Updates etc.)
+
+# Coordination Model
+Keep traffic small and request/load needed data first. Load the rest of the data later for faster process. 
+
+# Data Model
+Convert given Data into fitting type for the calendar. Save the converted data.
+
+# Mapping among Architectural Elements
+Important components to process are the rapla API, our database and the calendar entry. Make sure to get the data from the API into the Calendar while saving it in a parallel thread into local database.
+
+# Resource Management
+Save rapla entries in a own table. If the table does not work make sure to have a carbon copy of older volumes. And shut down/restart table. No need to restart whole database and main entries will still be visible.
+
+# Binding Time
+Connect frequently to update local rapla table entries. No need to keep connection for the whole time (might slow down the app).
+Choice of Technology
+Rapla api and a local database for testing. Later typical SQL Database.
+
+
