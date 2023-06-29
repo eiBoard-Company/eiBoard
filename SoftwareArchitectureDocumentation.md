@@ -182,7 +182,7 @@ Availability: Set notification as default. Save timestamps for notification in c
 Click [here](https://github.com/eiBoard-Company/eiBoard/blob/documentation/Interoperability%20Checklist.docx) for the additional Interoperability Tactics Checklist.
 
 ## 12. Interoperability Tactics Checklist
-# Allocation of Responsibilities
+### Allocation of Responsibilities
 Our system needs to interoperate with Rapla.
 Frequent Ping to ensure availability of the connection, Accept/Reject and Close connections, Log requests for later (e.g. Bugfixing, Updates etc.)
 
