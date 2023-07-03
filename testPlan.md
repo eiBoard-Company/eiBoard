@@ -213,96 +213,93 @@ API Testing is part of integration testing. Integration tests test multiple modu
 ### 6.1 Test Plan
 
 #### 6.1.1 Test Plan Entry Criteria
-[Specify the criteria that will be used to determine whether the execution of the Test Plan can begin.]
+n/a
 
 
 #### 6.1.2 Test Plan Exit Criteria
- [Specify the criteria that will be used to determine whether the execution of the Test Plan is complete or that continued execution provides no further benefit.]
-
+n/a
 
 ## 7. Deliverables
-[In this section, list the various artifacts that will be created by the test effort that are useful deliverables to the various stakeholders of the test effort. Don’t list all work products; only list those that give direct, tangible benefit to a stakeholder and those by which you want the success of the test effort to be measured.]
 
 ## 7.1 Test Evaluation Summaries
-[Provide a brief outline of both the form and content of the test evaluation summaries, and indicate how frequently they will be produced.]
+The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes the tests with a code analysis with Codacy. (In our final demo this sadly does not work yet)
 
 
 ## 7.2 Reporting on Test Coverage
-[Provide a brief outline of both the form and content of the reports used to measure the extent of testing, and indicate how frequently they will be produced. Give an indication as to the method and tools used to record, measure, and report on the extent of testing.] 
+This happens manually every time a developer writes a new test with the test coverage tools EclEmma and IntelliJ IDEA Code Coverage and with the tool Codacy.
 
 ## 7.3 Perceived Quality Reports
-[Provide a brief outline of both the form and content of the reports used to measure the perceived quality of the product, and indicate how frequently they will be produced. Give an indication about to the method and tools used to record, measure, and report on the perceived product quality. You might include some analysis of Incidents and Change Request over Test Coverage.]
+If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test. Furthermore, the code quality tool is codacy.
 
 ## 7.4 Incident Logs and Change Requests
-[Provide a brief outline of both the method and tools used to record, track, and manage test incidents, associated change requests, and their status.]
+Codacy should be added to the CI/CD pipeline. Every time someone pushes to the main repository, the pipeline with a build will be triggered. If a build fails this is directly visible in Jenkins.
 
 
 ## 7.5 Smoke Test Suite and Supporting Test Scripts
-
-[Provide a brief outline of the test assets that will be delivered to allow ongoing regression testing of subsequent product builds to help detect regressions in the product quality.]  
+The automated test execution in our CI/CD Pipeline enables regression testing. With this approach it is clearly visible when changes break existing functions and affect the correct behaviour of the application.
 
 ## 8. Testing Workflow
-
-[Provide an outline of the workflow to be followed by the Test team in the development and execution of this Test Plan.]
-The specific testing workflow that you will use should be documented separately in the project's Development Case. It should explain how the project has customized the base RUP test workflow (typically on a phase-by-phase basis). In most cases, we recommend you place a reference in this section of the Test Plan to the relevant section of the Development Case. It might be both useful and sufficient to simply include a diagram or image depicting your test workflow.
-More specific details of the individual testing tasks are defined in a number of different ways, depending on project culture; for example:
-•	defined as a list of tasks in this section of the Test Plan, or in an accompanying appendix 
-•	defined in a central project schedule (often in a scheduling tool such as Microsoft Project) 
-•	documented in individual, "dynamic" to-do lists for each team member, which are usually too detailed to be placed in the Test Plan 
-•	documented on a centrally located whiteboard and updated dynamically 
-•	not formally documented at all
-Based on your project culture, you should either list your specific testing tasks here or provide some descriptive text explaining the process your team uses to handle detailed task planning and provide a reference to where the details are stored, if appropriate.
-For Master Test Plans, we recommend avoiding detailed task planning, which is often an unproductive effort if done as a front-loaded activity at the beginning of the project. A Master Test Plan might usefully describe the phases and the number of iterations, and give an indication of what types of testing are generally planned for each Phase or Iteration.
-Note: Where process and detailed planning information is recorded centrally and separately from this Test Plan, you will have to manage the issues that will arise from having duplicate copies of the same information. To avoid team members referencing out-of-date information, we suggest that in this situation you place the minimum amount of process and planning information within the Test Plan to make ongoing maintenance easier and simply reference the "Master" source material.] 
-
-
+1. Local testing in the IDE
+2. A Commit or Push to the main repository triggers the build and test exection in the CI/CD Pipeline
+3. This triggers the pipeline (build and test)
+4. Before the automated deployment the build and test stages are executed
 
 ## 9. Environmental Needs
-[This section presents the non-human resources required for the Test Plan.]
 
 ### 9.1 Base System Hardware
-
 The following table sets forth the system resources for the test effort presented in this Test Plan.
-[The specific elements of the test system may not be fully understood in early iterations, so expect this section to be completed over time. We recommend that the system simulates the production environment, scaling down the concurrent access and database size, and so forth, if and where appropriate.]
-[Note:  Add or delete items as appropriate.]
 
-TODO: Tabelle einfügen
+| Resource              | Quantity | Name and Type                |
+|-----------------------|:--------:|------------------------------|
+| CI/CD server          |    1     | Jenkins              |
+| local test machine    |    1     | notebook (Eileen, Niklas, Matteo, Julian, Marius)       |
+| web application (eiboard.de)   |    1     | web application |
 
 
 ### 9.2 Base Software Elements in the Test Environment
-TODO: Tabelle einfügen
+The following base software elements are required in the test environment for this Test Plan.
+
+| Software Element Name |  Type and Other Notes                        |
+|-----------------------|----------------------------------------------|
+| Eclipse, IntelliJ, Visual Studio Code        | Test Runner / IDE                            |
+| JUnit 5, Mockito, flutter_test           | Unit testing library                         |
+| Cypress              | UI testing library                           |
 
 
 ### 9.3 Productivity and Support Tools
-TODO: Tabelle einfügen
+The following tools will be employed to support the test process for this Test Plan.
+
+| Tool Category or Type | Tool Brand Name                              |
+|-----------------------|----------------------------------------------|
+| Repository            | [github.com](http://github.com/)             |
+| Test Coverage Monitor | [codacy](https://app.codacy.com/)            |
+| CI/CD Service         | [Jenkins](https://www.jenkins.io/)           |
 
 
 ## 10. Responsibilities, Staffing, and Training Needs
-[This section presents the required resources to address the test effort outlined in the Test Plan—the main responsibilities, and the knowledge or skill sets required of those resources.]
 
 ### 10.1 People and Roles
-TODO: Tabelle einfügen
+| Role          | Person Assigned |  Specific Responsibilities or Comments |
+|---------------|:--------------:|----------------------------------------|
+| Test Manager | Marius | Provides management oversight. |
+| Test Designer | Julian, Eileen, Niklas | Defines the technical approach to the implementation of the test effort. |
+| Test System Administrator | Julian, Matteo | Ensures test environment and assets are managed and maintained. |
 
 
 ### 10.2 Staffing and Training Needs
-
-This section outlines how to approach staffing and training the test roles for the project.
-[The way to approach staffing and training will vary from project to project. If this section is part of a Master Test Plan, you should indicate at what points in the project lifecycle different skills and numbers of staff are needed. If this is an Iteration Test Plan, you should focus mainly on where and what training might occur during the Iteration.
-Give thought to your training needs, and plan to schedule this based on a Just-In-Time (JIT) approach—there is often a temptation to attend training too far in advance of its usage when the test team has apparent slack. Doing this introduces the risk of the training being forgotten by the time it's needed.
-Look for opportunities to combine the purchase of productivity tools with training on those tools, and arrange with the vendor to delay delivery of the training until just before you need it. If you have enough headcount, consider having training delivered in a customized manner for you, possibly at your own site.
-The test team often requires the support and skills of other team members not directly part of the test team. Make sure you arrange in your plan for appropriate availability of System Administrators, Database Administrators, and Developers who are required to enable the test effort.]
-
+n/a
 
 ## 11. Iteration Milestones
-
-TODO: Tabelle einfügen
-
+We want to keep over 20% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
-
-TODO: Tabelle einfügen
+| Risk | Mitigation Strategy | Contingency (Risk is realized) |
+|------|---------------------|--------------------------------|
+| Code has lots of side effects | Refactor code (Clean Code principles) | publish new refactored tests |
+| Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration |
+| UI tests fail | Refactor test | publish refactored test and restart |
 
 
 ## 13. Management Process and Procedures
 
-[Outline what processes and procedures are to be used when issues arise with the Test Plan and its enactment.]
+n/a
